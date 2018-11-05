@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.WEBTECHQA.UniNav.AcceptanceTestSuite
+-------------------------------------------------------------------------------
+Tests run: 80, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 600.553 sec <<< FAILURE! - in com.WEBTECHQA.UniNav.AcceptanceTestSuite
+Then search must show inactive state(com.WEBTECHQA.UninavDefinition.searchdefinition)  Time elapsed: 8.618 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
+

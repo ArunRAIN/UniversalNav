@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Searchautosuggest","Suggest search keywords","SUCCESS","2018-11-05T20:07:08.332+05:30[Asia/Calcutta]","0.0","26.46"
+"Searchautosuggest","Autosuggest retracts","SUCCESS","2018-11-05T20:07:38.282+05:30[Asia/Calcutta]","0.0","33.63"
+"Searchautosuggest","Autosuggest reappears as user types keyword","SUCCESS","2018-11-05T20:08:15.453+05:30[Asia/Calcutta]","0.0","43.11"
+"Searchautosuggest","Select from auto suggestedkeywords","SUCCESS","2018-11-05T20:09:02.228+05:30[Asia/Calcutta]","0.0","65.88"

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Site Search","Search - Inactive","SUCCESS","2018-11-05T20:10:11.539+05:30[Asia/Calcutta]","0.0","18.23"
+"Site Search","Search - Active","SUCCESS","2018-11-05T20:10:33.282+05:30[Asia/Calcutta]","0.0","20.57"
+"Site Search","Search with a keyword","SUCCESS","2018-11-05T20:11:50.738+05:30[Asia/Calcutta]","0.0","20.44"

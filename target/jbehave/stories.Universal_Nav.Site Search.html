@@ -1,0 +1,62 @@
+<div class="story">
+<h1>Site Search</h1>
+<div class="path">stories/Universal_Nav/Site Search.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> communicate effectively to the business some functionality</div>
+<div class="element asA"><span class="keyword asA">As a</span> development team</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use Behaviour-Driven Development
+
+eta:@skip</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Search - Inactive</h2>
+<div class="step successful">Given user is on the OCOM  page</div>
+<div class="step successful">When Global Nav loads</div>
+<div class="step successful">Then Search text must be followed with a search icon</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Search - Active</h2>
+<div class="step successful">Given Global Nav loads</div>
+<div class="step successful">When user clicks on the search icon</div>
+<div class="step successful">Then search field must open</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Search - Active</h2>
+<div class="step successful">Given user clicked onsearch icon</div>
+<div class="step successful">When search field opens</div>
+<div class="step successful">Then text search and cursor must appear in the field</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Search - Close</h2>
+<div class="step successful">Given search box in open</div>
+<div class="step successful">When user clicks away from search field</div>
+<div class="step failed">Then search must show inactive state <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.WEBTECHQA.Uninavpages.Searchpage.is_search_inactive_state(Searchpage.java:96)
+	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps.is_search_inactive_state(searchsteps.java:57)
+	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f.CGLIB$is_search_inactive_state$8(&lt;generated&gt;)
+	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f$$FastClassByCGLIB$$39ae27ce.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f.is_search_inactive_state(&lt;generated&gt;)
+	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Search with a keyword</h2>
+<div class="step successful">Given user entered a keyword</div>
+<div class="step successful">When user clicks onsearch icon</div>
+<div class="step successful">Then user must navigate to site search page</div>
+</div>
+</div>

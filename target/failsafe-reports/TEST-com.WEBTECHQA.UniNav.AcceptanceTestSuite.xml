@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.WEBTECHQA.UniNav.AcceptanceTestSuite" time="600.553" tests="80" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Execution\UNA\UniversalNav"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Execution\UNA\UniversalNav"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\arpannee\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\software\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1868949007653487148.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\software\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\nodejs;D:\software\Andrios\android-sdk_r24.3.4-windows\android-sdk-windows\tools;D:\software\Andrios\android-sdk_r24.3.4-windows\android-sdk-windows\platforms;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseGit\bin;C:\Users\arpannee\AppData\Local\Programs\Python\Python36-32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Git\cmd;C:\Users\arpannee\AppData\Local\Microsoft\WindowsApps;C:\Users\arpannee\AppData\Roaming\npm;C:\Users\arpannee\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;D:\software\eclipse-jee-mars-2-win32-x86_64\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\arpannee"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="arpannee"/>
+    <property name="java.class.path" value="/D:/software/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s D:\software\apache-maven-3.2.2-bin\apache-maven-3.2.2\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Execution\UNA\UniversalNav\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="BeforeStories" classname="java.lang.Object" time="0.1"/>
+  <testcase name="Given user is logged out" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="14.899"/>
+  <testcase name="When user hovers over SignIn" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.827"/>
+  <testcase name="Then Oracle and Cloud Sign In panel must be stacked" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="0.59"/>
+  <testcase name="Scenario: Accounts - logged out state" classname="Scenario: Accounts - logged out state" time="0.742"/>
+  <testcase name="Given user is logged in Oracle account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="25.956"/>
+  <testcase name="When user hovers over Account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.493"/>
+  <testcase name="Then user name and heading Oracle account must be displayed" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.735"/>
+  <testcase name="Scenario: Accounts - logged in state" classname="Scenario: Accounts - logged in state" time="3.83"/>
+  <testcase name="Given user is logged in Oracle account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="25.896"/>
+  <testcase name="When user hovers over Account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.629"/>
+  <testcase name="Then User verify Oracle account must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="1.244"/>
+  <testcase name="Scenario: Accounts - Oracle Account links verify" classname="Scenario: Accounts - Oracle Account links verify" time="1.408"/>
+  <testcase name="Given user is logged in Oracle account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="29.105"/>
+  <testcase name="When user hovers over Account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.69"/>
+  <testcase name="Then User verify Oracle signin must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="0.788"/>
+  <testcase name="Scenario: Accounts - Cloud Sign In links verify" classname="Scenario: Accounts - Cloud Sign In links verify" time="0.966"/>
+  <testcase name="Account․story" classname="Account․story" time="4.43"/>
+  <testcase name="Given user has contact in the nav" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="11.519"/>
+  <testcase name="When user clicks on the link" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="0.581"/>
+  <testcase name="Then contact list must open" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="4.242"/>
+  <testcase name="Scenario: Contact" classname="Scenario: Contact" time="4.703"/>
+  <testcase name="Contact․story" classname="Contact․story" time="8.262"/>
+  <testcase name="Given Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="10.483"/>
+  <testcase name="When user hovers over &apos;Country/Region&apos;" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="1.628"/>
+  <testcase name="Then panel must show Regions in the 1st panel and their countries in the 2nd panel" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="1.112"/>
+  <testcase name="Then based on country site pin must appear against it" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="12.842"/>
+  <testcase name="Scenario: Show regions and its countries" classname="Scenario: Show regions and its countries" time="13.057"/>
+  <testcase name="CountryList․story" classname="CountryList․story" time="16.596"/>
+  <testcase name="Given user is on the OCOM  page" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="11.248"/>
+  <testcase name="When the page loads" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.912"/>
+  <testcase name="Then menu must appear on the left of the Oracle Badge" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.875"/>
+  <testcase name="Scenario: Menu" classname="Scenario: Menu" time="1.137"/>
+  <testcase name="Given Menu panel opened" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="19.015"/>
+  <testcase name="When user clicks on a link" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="5.822"/>
+  <testcase name="Then user must navigate to that page" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="4.407"/>
+  <testcase name="Scenario: Navigate tositepage" classname="Scenario: Navigate tositepage" time="4.453"/>
+  <testcase name="Given Global Nav loads​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="12.044"/>
+  <testcase name="When user hovers over menu icon" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="6.121"/>
+  <testcase name="Then panels must load progressively" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="9.008"/>
+  <testcase name="Scenario: Hover over menu" classname="Scenario: Hover over menu" time="9.159"/>
+  <testcase name="Menu․story" classname="Menu․story" time="12.748"/>
+  <testcase name="Given user clicked in the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="15.502"/>
+  <testcase name="When user begins to type keyword &apos;ora&apos;" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="4.421"/>
+  <testcase name="Then auto suggestion must appear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.72"/>
+  <testcase name="Scenario: Suggest search keywords" classname="Scenario: Suggest search keywords" time="6.085"/>
+  <testcase name="Given autosuggest appears" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="23.885"/>
+  <testcase name="When user clicks outside the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.733"/>
+  <testcase name="Then autosuggest must retract" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.46"/>
+  <testcase name="Scenario: Autosuggest retracts" classname="Scenario: Autosuggest retracts" time="3.638"/>
+  <testcase name="Given autosuggestion retracted" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="33.456"/>
+  <testcase name="When user continues to enterkeyword" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.693"/>
+  <testcase name="Then autosuggest must reappear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.483"/>
+  <testcase name="Scenario: Autosuggest reappears as user types keyword" classname="Scenario: Autosuggest reappears as user types keyword" time="5.633"/>
+  <testcase name="Given search field shows autosuggestions" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="23.987"/>
+  <testcase name="When user selects an option and clickssearch icon" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.884"/>
+  <testcase name="Then results must be displayed on Oracle search page" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="37.406"/>
+  <testcase name="Scenario: Select from auto suggestedkeywords" classname="Scenario: Select from auto suggestedkeywords" time="37.514"/>
+  <testcase name="SearchAutosuggest․story" classname="SearchAutosuggest․story" time="40.938"/>
+  <testcase name="Given user is on the OCOM  page​" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="16.548"/>
+  <testcase name="When Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.629"/>
+  <testcase name="Then Search text must be followed with a search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.521"/>
+  <testcase name="Scenario: Search - Inactive" classname="Scenario: Search - Inactive" time="0.691"/>
+  <testcase name="Given Global Nav loads​​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="11.31"/>
+  <testcase name="When user clicks on the search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.942"/>
+  <testcase name="Then search field must open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="7.353"/>
+  <testcase name="Scenario: Search - Active" classname="Scenario: Search - Active" time="7.734"/>
+  <testcase name="Given user clicked onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="10.952"/>
+  <testcase name="When search field opens" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.292"/>
+  <testcase name="Then text search and cursor must appear in the field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="1.716"/>
+  <testcase name="Scenario: Search - Active​" classname="Scenario: Search - Active​" time="2.008"/>
+  <testcase name="Given search box in open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="17.846"/>
+  <testcase name="When user clicks away from search field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="5.649"/>
+  <testcase name="Then search must show inactive state" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="8.618">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
+</failure>
+    <system-out><![CDATA[When user clicks away from search field
+]]></system-out>
+  </testcase>
+  <testcase name="Given user entered a keyword" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="14.037"/>
+  <testcase name="When user clicks onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.684"/>
+  <testcase name="Then user must navigate to site search page" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="5.157"/>
+  <testcase name="Scenario: Search with a keyword" classname="Scenario: Search with a keyword" time="5.269"/>
+  <testcase name="Site Search․story" classname="Site Search․story" time="8.705"/>
+  <testcase name="AfterStories" classname="java.lang.Object" time="0.009"/>
+</testsuite>

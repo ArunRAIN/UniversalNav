@@ -1,0 +1,14 @@
+<story path="stories/Universal_Nav/Contact.story" title="Contact">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">communicate effectively to the business some functionality</inOrderTo>
+  <asA keyword="As a">development team</asA>
+  <iWantTo keyword="I want to">use Behaviour-Driven Development
+	
+eta:@skip</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Contact">
+<step outcome="successful">Given user has contact in the nav</step>
+<step outcome="successful">When user clicks on the link</step>
+<step outcome="successful">Then contact list must open</step>
+</scenario>
+</story>

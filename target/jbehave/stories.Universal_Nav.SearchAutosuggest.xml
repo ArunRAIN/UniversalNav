@@ -1,0 +1,27 @@
+<story path="stories/Universal_Nav/SearchAutosuggest.story" title="Searchautosuggest">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">communicate effectively to the business some functionality</inOrderTo>
+  <asA keyword="As a">development team</asA>
+  <iWantTo keyword="I want to">use Behaviour-Driven Development</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Suggest search keywords">
+<step outcome="successful">Given user clicked in the search field</step>
+<step outcome="successful">When user begins to type keyword &apos;ora&apos;</step>
+<step outcome="successful">Then auto suggestion must appear</step>
+</scenario>
+<scenario keyword="Scenario:" title="Autosuggest retracts">
+<step outcome="successful">Given autosuggest appears</step>
+<step outcome="successful">When user clicks outside the search field</step>
+<step outcome="successful">Then autosuggest must retract</step>
+</scenario>
+<scenario keyword="Scenario:" title="Autosuggest reappears as user types keyword">
+<step outcome="successful">Given autosuggestion retracted</step>
+<step outcome="successful">When user continues to enterkeyword</step>
+<step outcome="successful">Then autosuggest must reappear</step>
+</scenario>
+<scenario keyword="Scenario:" title="Select from auto suggestedkeywords">
+<step outcome="successful">Given search field shows autosuggestions</step>
+<step outcome="successful">When user selects an option and clickssearch icon</step>
+<step outcome="successful">Then results must be displayed on Oracle search page</step>
+</scenario>
+</story>

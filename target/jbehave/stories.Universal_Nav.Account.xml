@@ -1,0 +1,40 @@
+<story path="stories/Universal_Nav/Account.story" title="Account">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">communicate effectively to the business some functionality</inOrderTo>
+  <asA keyword="As a">development team</asA>
+  <iWantTo keyword="I want to">use Behaviour-Driven Development</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Accounts - logged out state">
+<step outcome="successful">Given user is logged out</step>
+<step outcome="successful">When user hovers over SignIn</step>
+<step outcome="successful">Then Oracle and Cloud Sign In panel must be stacked</step>
+</scenario>
+<scenario keyword="Scenario:" title="Accounts - logged in state">
+<step outcome="successful">Given user is logged in Oracle account</step>
+<step outcome="successful">When user hovers over Account</step>
+<step outcome="successful">Then user name and heading Oracle account must be displayed</step>
+</scenario>
+<scenario keyword="Scenario:" title="Accounts - Oracle Account links verify">
+<step outcome="successful">Given user is logged in Oracle account</step>
+<step outcome="successful">When user hovers over Account</step>
+<step outcome="successful">Then User verify Oracle account must have links:
+<parameter><parameters>
+<names><name>Option</name></names>
+<values><value>Sign Out</value></values>
+<values><value>Account</value></values>
+<values><value>Help</value></values>
+</parameters>
+</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="Accounts - Cloud Sign In links verify">
+<step outcome="successful">Given user is logged in Oracle account</step>
+<step outcome="successful">When user hovers over Account</step>
+<step outcome="successful">Then User verify Oracle signin must have links:
+<parameter><parameters>
+<names><name>Option</name></names>
+<values><value>Sign Up—Free Trial</value></values>
+<values><value>Sign in</value></values>
+</parameters>
+</parameter></step>
+</scenario>
+</story>

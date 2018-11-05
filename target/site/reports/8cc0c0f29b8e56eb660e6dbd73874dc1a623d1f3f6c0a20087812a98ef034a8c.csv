@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Account","Accounts - logged out state","SUCCESS","2018-11-05T20:02:23.458+05:30[Asia/Calcutta]","0.0","19.99"
+"Account","Accounts - logged in state","SUCCESS","2018-11-05T20:02:47.096+05:30[Asia/Calcutta]","0.0","38.58"
+"Account","Accounts - Oracle Account links verify","SUCCESS","2018-11-05T20:03:29.19+05:30[Asia/Calcutta]","0.0","36.34"
+"Account","Accounts - Cloud Sign In links verify","SUCCESS","2018-11-05T20:04:12.557+05:30[Asia/Calcutta]","0.0","39.15"

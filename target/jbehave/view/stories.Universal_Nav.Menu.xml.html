@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>stories.Universal_Nav.Menu</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/Universal_Nav/Menu.story" title="Menu">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">view stories</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">view page
+
+eta:@skip</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Menu">
+<step outcome="successful">Given user is on the OCOM  page</step>
+<step outcome="successful">When the page loads</step>
+<step outcome="successful">Then menu must appear on the left of the Oracle Badge</step>
+</scenario>
+<scenario keyword="Scenario:" title="Navigate tositepage">
+<step outcome="successful">Given Menu panel opened</step>
+<step outcome="successful">When user clicks on a link</step>
+<step outcome="successful">Then user must navigate to that page</step>
+</scenario>
+<scenario keyword="Scenario:" title="Hover over menu">
+<step outcome="successful">Given Global Nav loads</step>
+<step outcome="successful">When user hovers over menu icon</step>
+<step outcome="successful">Then panels must load progressively</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
