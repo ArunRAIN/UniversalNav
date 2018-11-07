@@ -38,28 +38,7 @@ eta:@skip</div>
 <h2>Scenario: Search - Close</h2>
 <div class="step successful">Given search box in open</div>
 <div class="step successful">When user clicks away from search field</div>
-<div class="step failed">Then search must show inactive state <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
-<pre class="failure">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.WEBTECHQA.Uninavpages.Searchpage.is_search_inactive_state(Searchpage.java:96)
-	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps.is_search_inactive_state(searchsteps.java:57)
-	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f.CGLIB$is_search_inactive_state$8(&lt;generated&gt;)
-	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f$$FastClassByCGLIB$$39ae27ce.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.WEBTECHQA.Uninavsteps.serenity.searchsteps$$EnhancerByCGLIB$$7ff2a29f.is_search_inactive_state(&lt;generated&gt;)
-	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
-...</pre>
+<div class="step successful">Then search must show inactive state</div>
 </div>
 <div class="scenario">
 <h2>Scenario: Search with a keyword</h2>

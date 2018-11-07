@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Account" skipped="0" tests="4" time="134.07" timestamp="2018-11-05 08:02:23"><testcase name="Accounts - logged out state"/><testcase name="Accounts - logged in state"/><testcase name="Accounts - Oracle Account links verify"/><testcase name="Accounts - Cloud Sign In links verify"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Account" skipped="0" tests="4" time="209.08" timestamp="2018-11-07 10:38:57"><testcase name="Accounts - logged out state"/><testcase name="Accounts - logged in state"/><testcase name="Accounts - Oracle Account links verify"/><testcase name="Accounts - Cloud Sign In links verify"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+com.WEBTECHQA.Uninavpages.AccountPage.signin_option_displayed(AccountPage.java:186)&#13;
+com.WEBTECHQA.Uninavsteps.serenity.Accountsteps.is_signin_options_display(Accountsteps.java:71)&#13;
+com.WEBTECHQA.UninavDefinition.AccountDefinition.thenCloudAccountMustDisplayCTALinkToFreeCloudPlatformTrial(AccountDefinition.java:85)&#13;
+</system-err></testcase></testsuite>

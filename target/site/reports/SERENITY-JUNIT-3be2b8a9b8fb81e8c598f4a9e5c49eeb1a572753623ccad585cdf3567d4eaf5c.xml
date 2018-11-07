@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Searchautosuggest" skipped="0" tests="4" time="169.06" timestamp="2018-11-05 08:07:08"><testcase name="Suggest search keywords"/><testcase name="Autosuggest retracts"/><testcase name="Autosuggest reappears as user types keyword"/><testcase name="Select from auto suggestedkeywords"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Searchautosuggest" skipped="0" tests="4" time="278.82" timestamp="2018-11-07 10:48:09"><testcase name="Suggest search keywords"/><testcase name="Autosuggest retracts"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)&#13;
+com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)&#13;
+com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Thenautosuggestmustretract(SearchAutosuggestDefinition.java:57)&#13;
+</system-err></testcase><testcase name="Autosuggest reappears as user types keyword"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)&#13;
+com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)&#13;
+com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Givenautosuggestionretracted(SearchAutosuggestDefinition.java:68)&#13;
+</system-err></testcase><testcase name="Select from auto suggestedkeywords"/></testsuite>

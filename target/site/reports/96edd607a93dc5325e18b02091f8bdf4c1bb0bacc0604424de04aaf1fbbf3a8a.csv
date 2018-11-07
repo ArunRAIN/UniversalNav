@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Site Search","Search - Close","FAILURE","2018-11-05T20:11:14.35+05:30[Asia/Calcutta]","0.0","32.53"
+"Account","Accounts - Cloud Sign In links verify","FAILURE","2018-11-07T22:40:59.374+05:30[Asia/Calcutta]","0.0","97.31"
+"Searchautosuggest","Autosuggest retracts","FAILURE","2018-11-07T22:49:20.557+05:30[Asia/Calcutta]","0.0","50.54"
+"Searchautosuggest","Autosuggest reappears as user types keyword","FAILURE","2018-11-07T22:50:14.923+05:30[Asia/Calcutta]","0.0","46.46"

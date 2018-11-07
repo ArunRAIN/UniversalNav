@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.WEBTECHQA.UniNav.AcceptanceTestSuite
 -------------------------------------------------------------------------------
-Tests run: 80, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 600.553 sec <<< FAILURE! - in com.WEBTECHQA.UniNav.AcceptanceTestSuite
-Then search must show inactive state(com.WEBTECHQA.UninavDefinition.searchdefinition)  Time elapsed: 8.618 sec  <<< FAILURE!
+Tests run: 77, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 1,090.245 sec <<< FAILURE! - in com.WEBTECHQA.UniNav.AcceptanceTestSuite
+Then User verify Oracle signin must have links:(com.WEBTECHQA.UninavDefinition.AccountDefinition)  Time elapsed: 2.503 sec  <<< FAILURE!
 java.lang.AssertionError
-	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
+	at com.WEBTECHQA.UninavDefinition.AccountDefinition.thenCloudAccountMustDisplayCTALinkToFreeCloudPlatformTrial(AccountDefinition.java:85)
+
+Then autosuggest must retract(com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition)  Time elapsed: 3.593 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Thenautosuggestmustretract(SearchAutosuggestDefinition.java:57)
+
+Given autosuggestion retracted(com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition)  Time elapsed: 46.457 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Givenautosuggestionretracted(SearchAutosuggestDefinition.java:68)
 

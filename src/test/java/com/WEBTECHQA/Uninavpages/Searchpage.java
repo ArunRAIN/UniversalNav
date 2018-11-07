@@ -54,7 +54,10 @@ public class Searchpage extends PageObject
 	public void is_search_field_open()
 	{
 		waitABit(3000);
-		getDriver().findElement(By.id("txtSearch")).sendKeys("ora");
+		WebElement ele = getDriver().switchTo().activeElement();
+    	Assert.assertEquals(ele, getDriver().findElement(By.id("txtSearch")));
+    	waitABit(1000);
+		//getDriver().findElement(By.id("txtSearch")).sendKeys("ora");
 		waitABit(3000);
 	}
 	

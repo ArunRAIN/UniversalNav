@@ -132,7 +132,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-11-2018 20:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-11-2018 22:50</span>
     <br style="clear:left"/>
 </div>
 
@@ -169,9 +169,9 @@ I want to use Behaviour-Driven Development
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Autosuggest reappears as user types keyword
+                                <span class="failing-color">Autosuggest reappears as user types keyword
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -188,26 +188,57 @@ I want to use Behaviour-Driven Development
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)<br />com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)<br />com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Givenautosuggestionretracted(SearchAutosuggestDefinition.java:68)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource19615720435029445.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="3cf1b8ea3f6c7299932bdf1dcdcc88841d8d00780c1deaa2112bd641ab90f19d.png" title="Given autosuggestion retracted" width="1920"/>
-                <img src="360a46af46eb9c583f7bd83c72aa5b2848f047fef5d203e1d194c5c5c96fdb2b.png" title="Is the home page" width="1920"/>
-                <img src="dcb345d87099d1bd11fed8f50663946f23a4e06706110ae8955880d2a7501209.png" title="Click search icon" width="1920"/>
-                <img src="8c71b66b2c38e3612d7f6d7ef27770ee66fe21f588ac30cac63614c1028a86c7.png" title="Click search icon" width="1920"/>
-                <img src="2b2d18c980111e8b535e75051bc6de77591b87f62cef134ede78ec55ed242396.png" title="Type keyword: ora" width="1920"/>
-                <img src="ad49c22c4cdfb9842332b0d343870113769d77a1c2cbb1d0772992c69337b3ce.png" title="Type keyword: ora" width="1920"/>
-                <img src="b76d1e6539b08f250c38ff24d772620c5b7ec989202a63b91877494cad95d959.png" title="Autosuggestion display" width="1920"/>
-                <img src="63e8b2f56c3c8515c5e908a9e07b819d349accaa37abefc0f20f85c3a8a2be42.png" title="Autosuggestion display" width="1920"/>
-                <img src="63e8b2f56c3c8515c5e908a9e07b819d349accaa37abefc0f20f85c3a8a2be42.png" title="Click outside searchbox" width="1920"/>
-                <img src="85a6ce9d23a7262b0b27e45ed7fd1bbd55952831137a588b1a2d89c1624aa00c.png" title="Click outside searchbox" width="1920"/>
-                <img src="3cf1b8ea3f6c7299932bdf1dcdcc88841d8d00780c1deaa2112bd641ab90f19d.png" title="Verify  autosuggestion not display" width="1920"/>
-                <img src="fbb21b459b6fafed1f6d87c6d353c6106997a5282e6afd913542ced8fe6a8f8a.png" title="When user continues to enterkeyword" width="1920"/>
-                <img src="d70380bf88289fcd3bf3d056b9468be8f47cf7af941388570ce2b3aac0401851.png" title="Type keyword: man" width="1920"/>
-                <img src="fbb21b459b6fafed1f6d87c6d353c6106997a5282e6afd913542ced8fe6a8f8a.png" title="Type keyword: man" width="1920"/>
-                <img src="d4e47c638a8d698d25d8ad44ab0e395ebfe8003606172092cd61513ab08f761a.png" title="Then autosuggest must reappear" width="1920"/>
-                <img src="5e77458e2ff22f54e75b47603249c33139adae30d5ed32268d039777ece97254.png" title="Then autosuggest must reappear" width="1920"/>
-                <img src="d4e47c638a8d698d25d8ad44ab0e395ebfe8003606172092cd61513ab08f761a.png" title="Autosuggestion display" width="1920"/>
-                <img src="fcfafe791252ec063ae306bf314bc29f530496de4e9b102aeaf1d30988804da4.png" title="Autosuggestion display: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="de333b9ea14a94a8ddb685ea8da3df9ad597255d3477a8cce20975c6e7dd0665.png" title="Is the home page" width="1920"/>
+                <img src="de333b9ea14a94a8ddb685ea8da3df9ad597255d3477a8cce20975c6e7dd0665.png" title="Click search icon" width="1920"/>
+                <img src="c4aad474f5f4375ced13f18d98af75e66020c6f87926ba43bf1a572e3776852e.png" title="Click search icon" width="1920"/>
+                <img src="93713859ae38a956ae877ea66210b74676702afb892fdba31abeb187f8c4990f.png" title="Type keyword: ora" width="1920"/>
+                <img src="a2af1de63107855a6785fbfd7e00001fb327740293b8411ebcc741e08d94d7f2.png" title="Type keyword: ora" width="1920"/>
+                <img src="a2af1de63107855a6785fbfd7e00001fb327740293b8411ebcc741e08d94d7f2.png" title="Autosuggestion display" width="1920"/>
+                <img src="a2af1de63107855a6785fbfd7e00001fb327740293b8411ebcc741e08d94d7f2.png" title="Click outside searchbox" width="1920"/>
+                <img src="ab2fd5bf6d52e21a54d43f05ca15750b9cd7964e86d5af763b88c0845710132f.png" title="Click outside searchbox" width="1920"/>
+                <img src="077da54130c7f26fa99469c7203f04077b52bb17d3296e9818a7e2e1f6edd2ff.png" title="Verify  autosuggestion not display" width="1920"/>
+                <img src="95590d1cb1d641bf1d9efec4c07e98242d520c6f60bf8e3609d79fedb47b0075.png" title="Verify  autosuggestion not display: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

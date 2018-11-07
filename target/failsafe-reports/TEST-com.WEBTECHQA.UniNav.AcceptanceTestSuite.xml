@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.WEBTECHQA.UniNav.AcceptanceTestSuite" time="600.553" tests="80" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.WEBTECHQA.UniNav.AcceptanceTestSuite" time="1,090.245" tests="77" errors="0" skipped="2" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\software\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1868949007653487148.tmp"/>
+    <property name="classworlds.conf" value="D:\software\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8334599501310677626.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\software\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\nodejs;D:\software\Andrios\android-sdk_r24.3.4-windows\android-sdk-windows\tools;D:\software\Andrios\android-sdk_r24.3.4-windows\android-sdk-windows\platforms;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseGit\bin;C:\Users\arpannee\AppData\Local\Programs\Python\Python36-32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Git\cmd;C:\Users\arpannee\AppData\Local\Microsoft\WindowsApps;C:\Users\arpannee\AppData\Roaming\npm;C:\Users\arpannee\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;D:\software\eclipse-jee-mars-2-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,90 +60,157 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BeforeStories" classname="java.lang.Object" time="0.1"/>
-  <testcase name="Given user is logged out" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="14.899"/>
-  <testcase name="When user hovers over SignIn" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.827"/>
-  <testcase name="Then Oracle and Cloud Sign In panel must be stacked" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="0.59"/>
-  <testcase name="Scenario: Accounts - logged out state" classname="Scenario: Accounts - logged out state" time="0.742"/>
-  <testcase name="Given user is logged in Oracle account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="25.956"/>
-  <testcase name="When user hovers over Account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.493"/>
-  <testcase name="Then user name and heading Oracle account must be displayed" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.735"/>
-  <testcase name="Scenario: Accounts - logged in state" classname="Scenario: Accounts - logged in state" time="3.83"/>
-  <testcase name="Given user is logged in Oracle account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="25.896"/>
-  <testcase name="When user hovers over Account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.629"/>
-  <testcase name="Then User verify Oracle account must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="1.244"/>
-  <testcase name="Scenario: Accounts - Oracle Account links verify" classname="Scenario: Accounts - Oracle Account links verify" time="1.408"/>
-  <testcase name="Given user is logged in Oracle account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="29.105"/>
-  <testcase name="When user hovers over Account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.69"/>
-  <testcase name="Then User verify Oracle signin must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="0.788"/>
-  <testcase name="Scenario: Accounts - Cloud Sign In links verify" classname="Scenario: Accounts - Cloud Sign In links verify" time="0.966"/>
-  <testcase name="Account․story" classname="Account․story" time="4.43"/>
-  <testcase name="Given user has contact in the nav" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="11.519"/>
-  <testcase name="When user clicks on the link" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="0.581"/>
-  <testcase name="Then contact list must open" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="4.242"/>
-  <testcase name="Scenario: Contact" classname="Scenario: Contact" time="4.703"/>
-  <testcase name="Contact․story" classname="Contact․story" time="8.262"/>
-  <testcase name="Given Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="10.483"/>
-  <testcase name="When user hovers over &apos;Country/Region&apos;" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="1.628"/>
-  <testcase name="Then panel must show Regions in the 1st panel and their countries in the 2nd panel" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="1.112"/>
-  <testcase name="Then based on country site pin must appear against it" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="12.842"/>
-  <testcase name="Scenario: Show regions and its countries" classname="Scenario: Show regions and its countries" time="13.057"/>
-  <testcase name="CountryList․story" classname="CountryList․story" time="16.596"/>
-  <testcase name="Given user is on the OCOM  page" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="11.248"/>
-  <testcase name="When the page loads" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.912"/>
-  <testcase name="Then menu must appear on the left of the Oracle Badge" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.875"/>
-  <testcase name="Scenario: Menu" classname="Scenario: Menu" time="1.137"/>
-  <testcase name="Given Menu panel opened" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="19.015"/>
-  <testcase name="When user clicks on a link" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="5.822"/>
-  <testcase name="Then user must navigate to that page" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="4.407"/>
-  <testcase name="Scenario: Navigate tositepage" classname="Scenario: Navigate tositepage" time="4.453"/>
-  <testcase name="Given Global Nav loads​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="12.044"/>
-  <testcase name="When user hovers over menu icon" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="6.121"/>
-  <testcase name="Then panels must load progressively" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="9.008"/>
-  <testcase name="Scenario: Hover over menu" classname="Scenario: Hover over menu" time="9.159"/>
-  <testcase name="Menu․story" classname="Menu․story" time="12.748"/>
-  <testcase name="Given user clicked in the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="15.502"/>
-  <testcase name="When user begins to type keyword &apos;ora&apos;" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="4.421"/>
-  <testcase name="Then auto suggestion must appear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.72"/>
-  <testcase name="Scenario: Suggest search keywords" classname="Scenario: Suggest search keywords" time="6.085"/>
-  <testcase name="Given autosuggest appears" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="23.885"/>
-  <testcase name="When user clicks outside the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.733"/>
-  <testcase name="Then autosuggest must retract" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.46"/>
-  <testcase name="Scenario: Autosuggest retracts" classname="Scenario: Autosuggest retracts" time="3.638"/>
-  <testcase name="Given autosuggestion retracted" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="33.456"/>
-  <testcase name="When user continues to enterkeyword" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.693"/>
-  <testcase name="Then autosuggest must reappear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.483"/>
-  <testcase name="Scenario: Autosuggest reappears as user types keyword" classname="Scenario: Autosuggest reappears as user types keyword" time="5.633"/>
-  <testcase name="Given search field shows autosuggestions" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="23.987"/>
-  <testcase name="When user selects an option and clickssearch icon" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.884"/>
-  <testcase name="Then results must be displayed on Oracle search page" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="37.406"/>
-  <testcase name="Scenario: Select from auto suggestedkeywords" classname="Scenario: Select from auto suggestedkeywords" time="37.514"/>
-  <testcase name="SearchAutosuggest․story" classname="SearchAutosuggest․story" time="40.938"/>
-  <testcase name="Given user is on the OCOM  page​" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="16.548"/>
-  <testcase name="When Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.629"/>
-  <testcase name="Then Search text must be followed with a search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.521"/>
-  <testcase name="Scenario: Search - Inactive" classname="Scenario: Search - Inactive" time="0.691"/>
-  <testcase name="Given Global Nav loads​​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="11.31"/>
-  <testcase name="When user clicks on the search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.942"/>
-  <testcase name="Then search field must open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="7.353"/>
-  <testcase name="Scenario: Search - Active" classname="Scenario: Search - Active" time="7.734"/>
-  <testcase name="Given user clicked onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="10.952"/>
-  <testcase name="When search field opens" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.292"/>
-  <testcase name="Then text search and cursor must appear in the field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="1.716"/>
-  <testcase name="Scenario: Search - Active​" classname="Scenario: Search - Active​" time="2.008"/>
-  <testcase name="Given search box in open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="17.846"/>
-  <testcase name="When user clicks away from search field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="5.649"/>
-  <testcase name="Then search must show inactive state" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="8.618">
+  <testcase name="BeforeStories" classname="java.lang.Object" time="0.076"/>
+  <testcase name="Given user is logged out" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="16.346"/>
+  <testcase name="When user hovers over SignIn" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.481"/>
+  <testcase name="Then Oracle and Cloud Sign In panel must be stacked" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="0.333"/>
+  <testcase name="Scenario: Accounts - logged out state" classname="Scenario: Accounts - logged out state" time="0.449"/>
+  <testcase name="Given user is logged in Oracle account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="34.256"/>
+  <testcase name="When user hovers over Account" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.439"/>
+  <testcase name="Then user name and heading Oracle account must be displayed" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="3.383"/>
+  <testcase name="Scenario: Accounts - logged in state" classname="Scenario: Accounts - logged in state" time="3.497"/>
+  <testcase name="Given user is logged in Oracle account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="34.947"/>
+  <testcase name="When user hovers over Account​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.452"/>
+  <testcase name="Then User verify Oracle account must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="1.014"/>
+  <testcase name="Scenario: Accounts - Oracle Account links verify" classname="Scenario: Accounts - Oracle Account links verify" time="1.122"/>
+  <testcase name="Given user is logged in Oracle account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="86.243"/>
+  <testcase name="When user hovers over Account​​" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="8.331"/>
+  <testcase name="Then User verify Oracle signin must have links:" classname="com.WEBTECHQA.UninavDefinition.AccountDefinition" time="2.503">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:89)
+	at com.WEBTECHQA.UninavDefinition.AccountDefinition.thenCloudAccountMustDisplayCTALinkToFreeCloudPlatformTrial(AccountDefinition.java:85)
 </failure>
-    <system-out><![CDATA[When user clicks away from search field
+    <system-out><![CDATA[When user hovers over Account
 ]]></system-out>
   </testcase>
-  <testcase name="Given user entered a keyword" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="14.037"/>
-  <testcase name="When user clicks onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.684"/>
-  <testcase name="Then user must navigate to site search page" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="5.157"/>
-  <testcase name="Scenario: Search with a keyword" classname="Scenario: Search with a keyword" time="5.269"/>
-  <testcase name="Site Search․story" classname="Site Search․story" time="8.705"/>
-  <testcase name="AfterStories" classname="java.lang.Object" time="0.009"/>
+  <testcase name="Given user has contact in the nav" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="48.633"/>
+  <testcase name="When user clicks on the link" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="0.45"/>
+  <testcase name="Then contact list must open" classname="com.WEBTECHQA.UninavDefinition.Contactdefinition" time="3.454"/>
+  <testcase name="Scenario: Contact" classname="Scenario: Contact" time="3.573"/>
+  <testcase name="Contact․story" classname="Contact․story" time="6.908"/>
+  <testcase name="Given Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="68.07"/>
+  <testcase name="When user hovers over &apos;Country/Region&apos;" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="1.427"/>
+  <testcase name="Then panel must show Regions in the 1st panel and their countries in the 2nd panel" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="0.641"/>
+  <testcase name="Then based on country site pin must appear against it" classname="com.WEBTECHQA.UninavDefinition.CountryListDefinition" time="12.815"/>
+  <testcase name="Scenario: Show regions and its countries" classname="Scenario: Show regions and its countries" time="12.931"/>
+  <testcase name="CountryList․story" classname="CountryList․story" time="16.51"/>
+  <testcase name="Given user is on the OCOM  page" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="30.837"/>
+  <testcase name="When the page loads" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.442"/>
+  <testcase name="Then menu must appear on the left of the Oracle Badge" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="0.389"/>
+  <testcase name="Scenario: Menu" classname="Scenario: Menu" time="0.501"/>
+  <testcase name="Given Menu panel opened" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="70.023"/>
+  <testcase name="When user clicks on a link" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="6.007"/>
+  <testcase name="Then user must navigate to that page" classname="com.WEBTECHQA.UninavDefinition.MenusiteDefinition" time="4.349"/>
+  <testcase name="Scenario: Navigate tositepage" classname="Scenario: Navigate tositepage" time="4.472"/>
+  <testcase name="Given Global Nav loads​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="41.689"/>
+  <testcase name="When user hovers over menu icon" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="5.555"/>
+  <testcase name="Then panels must load progressively" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="8.338"/>
+  <testcase name="Scenario: Hover over menu" classname="Scenario: Hover over menu" time="8.474"/>
+  <testcase name="Menu․story" classname="Menu․story" time="12.163"/>
+  <testcase name="Given user clicked in the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="58.064"/>
+  <testcase name="When user begins to type keyword &apos;ora&apos;" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.431"/>
+  <testcase name="Then auto suggestion must appear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.379"/>
+  <testcase name="Scenario: Suggest search keywords" classname="Scenario: Suggest search keywords" time="5.52"/>
+  <testcase name="Given autosuggest appears" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="41.148"/>
+  <testcase name="When user clicks outside the search field" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="5.507"/>
+  <testcase name="Then autosuggest must retract" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.593">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Thenautosuggestmustretract(SearchAutosuggestDefinition.java:57)
+</failure>
+    <system-out><![CDATA[When user clicks outside the search field
+]]></system-out>
+  </testcase>
+  <testcase name="Given autosuggestion retracted" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="46.457">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Givenautosuggestionretracted(SearchAutosuggestDefinition.java:68)
+</failure>
+    <system-out><![CDATA[Then autosuggest must retract (FAILED)
+(java.lang.AssertionError)
+
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)
+	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)
+	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.CGLIB$verify_Autosuggestion_not_display$2(<generated>)
+	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c$$FastClassByCGLIB$$2ec27ef5.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.verify_Autosuggestion_not_display(<generated>)
+	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Thenautosuggestmustretract(SearchAutosuggestDefinition.java:57)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...
+Scenario: Autosuggest reappears as user types keyword
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Autosuggest retracts
+--------------------------------------------------------------------------
+[pool-1-thread-1] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify autosuggestion not display
+[pool-1-thread-1] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+[pool-1-thread-1] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Autosuggest reappears as user types keyword
+-------------------------------------------------------------------(stories/Universal_Nav/SearchAutosuggest.story;Autosuggest reappears as user types keyword)
+Nov 07, 2018 10:50:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="When user continues to enterkeyword" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="0">
+    <skipped/>
+    <system-out><![CDATA[Given autosuggestion retracted (FAILED)
+(java.lang.AssertionError)
+]]></system-out>
+  </testcase>
+  <testcase name="Then autosuggest must reappear" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="0">
+    <skipped/>
+    <system-out><![CDATA[When user continues to enterkeyword (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Given search field shows autosuggestions" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="73.613"/>
+  <testcase name="When user selects an option and clickssearch icon" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="3.393"/>
+  <testcase name="Then results must be displayed on Oracle search page" classname="com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition" time="37.24"/>
+  <testcase name="Scenario: Select from auto suggestedkeywords" classname="Scenario: Select from auto suggestedkeywords" time="37.367"/>
+  <testcase name="SearchAutosuggest․story" classname="SearchAutosuggest․story" time="41.243"/>
+  <testcase name="Given user is on the OCOM  page​" classname="com.WEBTECHQA.UninavDefinition.CarouselBannerDefinition" time="28.883"/>
+  <testcase name="When Global Nav loads" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.345"/>
+  <testcase name="Then Search text must be followed with a search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.344"/>
+  <testcase name="Scenario: Search - Inactive" classname="Scenario: Search - Inactive" time="0.471"/>
+  <testcase name="Given Global Nav loads​​" classname="com.WEBTECHQA.UninavDefinition.Menupaneldefinition" time="53.61"/>
+  <testcase name="When user clicks on the search icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.444"/>
+  <testcase name="Then search field must open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="7.366"/>
+  <testcase name="Scenario: Search - Active" classname="Scenario: Search - Active" time="7.477"/>
+  <testcase name="Given user clicked onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="32.359"/>
+  <testcase name="When search field opens" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.107"/>
+  <testcase name="Then text search and cursor must appear in the field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="1.36"/>
+  <testcase name="Scenario: Search - Active​" classname="Scenario: Search - Active​" time="1.47"/>
+  <testcase name="Given search box in open" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="35.764"/>
+  <testcase name="When user clicks away from search field" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="5.531"/>
+  <testcase name="Then search must show inactive state" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="6.433"/>
+  <testcase name="Scenario: Search - Close" classname="Scenario: Search - Close" time="6.567"/>
+  <testcase name="Given user entered a keyword" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="40.187"/>
+  <testcase name="When user clicks onsearch icon" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="0.483"/>
+  <testcase name="Then user must navigate to site search page" classname="com.WEBTECHQA.UninavDefinition.searchdefinition" time="4.333"/>
+  <testcase name="Scenario: Search with a keyword" classname="Scenario: Search with a keyword" time="4.408"/>
+  <testcase name="Site Search․story" classname="Site Search․story" time="7.897"/>
+  <testcase name="AfterStories" classname="java.lang.Object" time="0.001"/>
 </testsuite>
