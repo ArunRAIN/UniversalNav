@@ -18,6 +18,7 @@ public class Contactdefinition
 	public void givenUserHascontactInTheNav()
 	{
 	  ctStep.is_the_home_page();
+	  ctStep.maximize_browser();
 	}
 
 	@When("user clicks on the link")

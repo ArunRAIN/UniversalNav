@@ -16,55 +16,13 @@
 <h2>Scenario: Autosuggest retracts</h2>
 <div class="step successful">Given autosuggest appears</div>
 <div class="step successful">When user clicks outside the search field</div>
-<div class="step failed">Then autosuggest must retract <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
-<pre class="failure">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.CGLIB$verify_Autosuggestion_not_display$2(&lt;generated&gt;)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c$$FastClassByCGLIB$$2ec27ef5.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.verify_Autosuggestion_not_display(&lt;generated&gt;)
-	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Thenautosuggestmustretract(SearchAutosuggestDefinition.java:57)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
-...</pre>
+<div class="step successful">Then autosuggest must retract</div>
 </div>
 <div class="scenario">
 <h2>Scenario: Autosuggest reappears as user types keyword</h2>
-<div class="step failed">Given autosuggestion retracted <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
-<div class="step notPerformed">When user continues to enterkeyword <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then autosuggest must reappear <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<pre class="failure">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.WEBTECHQA.Uninavpages.SearchAutosuggestPage.verify_Autosuggestion_not_display(SearchAutosuggestPage.java:84)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps.verify_Autosuggestion_not_display(SearchAutosuggestSteps.java:46)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.CGLIB$verify_Autosuggestion_not_display$2(&lt;generated&gt;)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c$$FastClassByCGLIB$$2ec27ef5.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps$$EnhancerByCGLIB$$7a5b0f9c.verify_Autosuggestion_not_display(&lt;generated&gt;)
-	at com.WEBTECHQA.UninavDefinition.SearchAutosuggestDefinition.Givenautosuggestionretracted(SearchAutosuggestDefinition.java:68)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
-...</pre>
+<div class="step successful">Given autosuggestion retracted</div>
+<div class="step successful">When user continues to enterkeyword</div>
+<div class="step successful">Then autosuggest must reappear</div>
 </div>
 <div class="scenario">
 <h2>Scenario: Select from auto suggestedkeywords</h2>

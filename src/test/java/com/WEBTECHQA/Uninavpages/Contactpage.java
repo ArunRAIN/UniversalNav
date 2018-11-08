@@ -22,6 +22,11 @@ public class Contactpage extends PageObject
 		js.executeScript("arguments[0].click();", element);
 	}
 
+	public void maximize_browser()
+	{
+		waitABit(1000);
+		getDriver().manage().window().maximize();
+	}
 	
 	public void is_contact_list_display()
 	{

@@ -1,5 +1,6 @@
 package com.WEBTECHQA.UninavDefinition;
 
+import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
@@ -13,6 +14,15 @@ public class CountryListDefinition
 	    CountryListSteps Cuser;
 
 	   
+	    @Given("Global Nav load")
+	    public void GivenGlobalNavload() 
+		{
+	    	Cuser.is_the_home_page(); 
+	    	Cuser.maximize_browser();
+			Cuser.global_nav_loads();
+		}
+		
+		
 	    @When("user hovers over '$country'")
 	    public void whenUserHoversOverCountryregion(String country)
 	    {

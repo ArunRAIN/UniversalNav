@@ -14,6 +14,11 @@ public class Contactsteps
 		
     }
 	
+    @Step
+    public void maximize_browser()
+	{
+    	ctpage.maximize_browser();
+    }
 	
 	@Step
     public void click_on_contact()

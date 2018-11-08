@@ -39,34 +39,13 @@
 <scenario keyword="Scenario:" title="Accounts - Cloud Sign In links verify">
 <step outcome="successful">Given user is logged in Oracle account</step>
 <step outcome="successful">When user hovers over Account</step>
-<step outcome="failed" keyword="FAILED">Then User verify Oracle signin must have links:
+<step outcome="successful">Then User verify Oracle signin must have links:
 <parameter><parameters>
 <names><name>Option</name></names>
-<values><value>Sign Up—Free Trial</value></values>
+<values><value>Free Cloud Platform Trial</value></values>
 <values><value>Sign in</value></values>
 </parameters>
-</parameter><failure>java.lang.AssertionError</failure></step>
-<failure>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.WEBTECHQA.Uninavpages.AccountPage.signin_option_displayed(AccountPage.java:186)
-	at com.WEBTECHQA.Uninavsteps.serenity.Accountsteps.is_signin_options_display(Accountsteps.java:71)
-	at com.WEBTECHQA.Uninavsteps.serenity.Accountsteps$$EnhancerByCGLIB$$27f63f7c.CGLIB$is_signin_options_display$2(&lt;generated&gt;)
-	at com.WEBTECHQA.Uninavsteps.serenity.Accountsteps$$EnhancerByCGLIB$$27f63f7c$$FastClassByCGLIB$$a81b1b72.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.WEBTECHQA.Uninavsteps.serenity.Accountsteps$$EnhancerByCGLIB$$27f63f7c.is_signin_options_display(&lt;generated&gt;)
-	at com.WEBTECHQA.UninavDefinition.AccountDefinition.thenCloudAccountMustDisplayCTALinkToFreeCloudPlatformTrial(AccountDefinition.java:85)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
-...</failure>
+</parameter></step>
 </scenario>
 </story>
 

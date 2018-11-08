@@ -34,7 +34,11 @@ public class SearchAutosuggestPage extends PageObject
     
    
    
-    
+    public void maximize_browser()
+	{
+		waitABit(1000);
+		getDriver().manage().window().maximize();
+	}
 //    public void navigate_page()
 //    {
 //    	getDriver().navigate().back();

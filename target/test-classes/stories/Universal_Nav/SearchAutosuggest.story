@@ -10,7 +10,7 @@ Given user clicked in the search field
 When user begins to type keyword 'ora'
 Then auto suggestion must appear
 
-Scenario: Autosuggest retracts 
+Scenario: Autosuggest retracts
 Given autosuggest appears
 When user clicks outside the search field
 Then autosuggest must retract

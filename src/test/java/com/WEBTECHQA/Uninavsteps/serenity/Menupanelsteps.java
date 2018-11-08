@@ -16,6 +16,12 @@ public class Menupanelsteps
     }
 	
 	@Step
+    public void maximize_browser()
+	{
+		mppage.maximize_browser();
+    }
+	
+	@Step
     public void global_nav_loads()
 	{
 		mppage.is_page_loaded();
@@ -70,8 +76,43 @@ public class Menupanelsteps
 
 	   }
 	   
+	   @Step
+	    public void is_home_page()
+		{
+		   mppage.open();
+		   mppage.hover_on_menu();
+		   mppage.menu_opened();
+	    }
+		
+
+		
+		
+		@Step
+	    public void click_on_link()
+		{
+			mppage.hover_on_primary_panel_categories();
+			mppage.hover_on_secondary_panel_catagories();
+			mppage.click_on_link();
+			
+	    }
+		
+		@Step
+	    public void is_page_navigated()
+		{
+			mppage.is_page_navigated();
+			
+	    }
 	   
-	   
-	   
+		   @Step
+		   public void menu_display_on_left()
+		   {
+			  
+		   }
+		
+		@Step
+	    public void is_page_loaded()
+		{
+			mppage.is_page_loaded();
+	    }
 	
 }

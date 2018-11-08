@@ -20,6 +20,7 @@ public class AccountDefinition
 	public void Givenuserisloggedout()
 	{
 		ACstep.is_the_home_page();
+		ACstep.maximize_browser();
 		
 	}
 	
@@ -40,6 +41,7 @@ public class AccountDefinition
 	public void GivenuserisloggedinOracleaccount()
 	{
 		ACstep.is_the_home_page();
+		ACstep.maximize_browser();
 		ACstep.hover_on_signIn();
 		ACstep.SignIn_account();
 		

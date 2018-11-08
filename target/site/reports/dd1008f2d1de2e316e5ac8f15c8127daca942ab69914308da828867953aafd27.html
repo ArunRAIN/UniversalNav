@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        $('.scenario-result-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 10,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 10,
+            "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+        });
+
+        $('#evidence-table').DataTable({
+                    searching: false,
+                    paging:false,
+                    info: false
+        });
+
+        $(".feature-coverage-table").DataTable({
+            searching: false,
+            paging: false,
+            info: false
+        });
+
+        $(".feature-coverage-table-with-pagination").DataTable({
+            order: [[0, "asc",]],
+            pageLength: 10,
+            language: {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+    });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Universal Nav</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Feature  (with Browser Edge)
+                > <span
+                    class="truncate-60">Universal Nav</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-11-2018 20:21</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='fa fa-tags'></i> Feature: Universal Nav</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div class="test-count-title">
+                                18 test scenarios 
+                                 |
+                                    <a href="dd1008f2d1de2e316e5ac8f15c8127daca942ab69914308da828867953aafd27.csv" title="Download CSV"> <i class="fa fa-download"
+                                                                                    title="Download CSV"></i></a>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="fas fa-home"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="fas fa-tachometer-alt"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                            <div style="width:300px;"
+                                                                 class="chart-container automated-and-manual-results">
+                                                                <div class="ct-chart ct-square"></div>
+                                                            </div>
+                                                            <script>
+
+                                                                var labels = ['94%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '6%', ' ', ' ', ' ', ' ', ' '];
+                                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                                var series = [{meta: 'Passing tests (automated)', value: 17}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                                // as you saw in the previous example
+                                                                var options = {
+                                                                    width: 350,
+                                                                    height: 300
+                                                                };
+
+
+                                                                new Chartist.Pie('.ct-chart', {
+                                                                    series: series,
+                                                                    labels: labels
+                                                                }, {
+                                                                    plugins: [Chartist.plugins.tooltip()],
+                                                                    donut: true,
+                                                                    donutWidth: 60,
+                                                                    donutSolid: true,
+                                                                    startAngle: 270,
+                                                                    showLabel: true
+                                                                }, options);
+
+
+                                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                                    new Chartist.Pie('.ct-chart', {
+                                                                        series: series,
+                                                                        labels: labels
+                                                                    }, {
+                                                                        plugins: [Chartist.plugins.tooltip()],
+                                                                        donut: true,
+                                                                        donutWidth: 60,
+                                                                        donutSolid: true,
+                                                                        startAngle: 270,
+                                                                        showLabel: true
+                                                                    }, options);
+                                                                });
+
+
+                                                            </script>
+                                                    </div>
+                                                    <div class="col-sm-8">
+
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Scenarios</th>
+                                                                <th scope="col" colspan="2" class="automated-stats">
+                                                                    Automated
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="58a552e7aaf6ff4942532fd27b0ac47ee13849154ea627baa568803d8f0b5876.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    </td>
+                                                                <td class="automated-stats">17</td>
+                                                                <td class="automated-stats">94%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                    </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td colspan="3"><a
+                                                                            href="a9c02be515be2aa95d5470142be99b4bb86548ae339ec400d18c34dbb13c93a8.html"><i
+                                                                            class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="17df430404067da2da4d87fbc57756e5590bbc171a388402040f22e599b6a94e.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">6%</td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr class="summary-stats">
+                                                                <td class="aggregate-result-count">Total</td>
+                                                                <td class="automated-stats">18</td>
+                                                                <td class="automated-stats"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Functional Coverage Overview</h3>
+
+                                                            <table class="table feature-coverage-table"
+                                                                   id="Feature">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>Feature</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">Scenarios</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">% Pass</th>
+                                                                    <th style="" width:7.5em;
+                                                                    ">Result</th>
+                                                                    <th>Coverage</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                                <a href="b114c7c01b9c212a212963733ff758deb622e38c693b1e918dd8bd6956fc09f8.html">Universal nav</a>
+                                                                        </td>
+                                                                        <td>18</td>
+                                                                        <td>94%</td>
+                                                                        <td>
+                                                                                <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                    <div class="progress-bar"
+                                                                                         role="progressbar"
+                                                                                         style="width: 94.444444%; background-color: #30cb23"
+                                                                                         aria-valuenow="17"
+                                                                                         title="94% success"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                                    <div class="progress-bar"
+                                                                                         role="progressbar"
+                                                                                         style="width: 5.555556%; background-color: #f8001f"
+                                                                                         aria-valuenow="1"
+                                                                                         title="6% failure"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h3>Test Failure Overview</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Frequent Failures</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="failure-color top-list-title">
+                                                                    <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> Assertion error</a>
+                                                                </td>
+                                                                <td><span
+                                                                        class="badge failure-badge">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Unstable Features</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="failure-color top-list-title"><a
+                                                                            href="fd85e77c72ae5b08396a305405f8671676076e10cebc8f5eb344b94e20fb237e.html">Site Search</a>
+                                                                    </td>
+                                                                    <td><span
+                                                                            class="badge failure-badge">20%</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Tags</h3>
+
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Browser</h5>
+                                                                <div>
+                                                                    <a href="19951fa0c00e14e1f16935507113a4387f739b5979e1beb45de8891356a61150.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Edge&nbsp;&nbsp;&nbsp;18</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Context</h5>
+                                                                <div>
+                                                                    <a href="354d3937c8601d80041632174629aadd90c4ddb60a4ac43d7dc8854bd90818d2.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Edge&nbsp;&nbsp;&nbsp;18</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>story</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="55a1d551d297b24b1e1dd6e3a3f470adc737ee6c43c3764dfa3ec6eaa745562c.html">Account</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="1f5cabc64a23a6995d75095254b067f3d71c8b8de7fb5c86438ad89c54964c25.html">Accounts - logged out state</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:01:40</td>
+                                                    <td>00:13</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="55a1d551d297b24b1e1dd6e3a3f470adc737ee6c43c3764dfa3ec6eaa745562c.html">Account</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="71ce384e6d948562c32c41618d0a1aba9a85d4a1e1cbf28d0d5014c0cea11d5f.html">Accounts - logged in state</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:01:58</td>
+                                                    <td>00:32</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="55a1d551d297b24b1e1dd6e3a3f470adc737ee6c43c3764dfa3ec6eaa745562c.html">Account</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="55c370295c122170f8e62a1a7dd76dd25291fce1590fd1e140033b6c2babe78c.html">Accounts - Oracle Account links verify</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:02:35</td>
+                                                    <td>00:30</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="55a1d551d297b24b1e1dd6e3a3f470adc737ee6c43c3764dfa3ec6eaa745562c.html">Account</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="2e80640660f6b4a5b2dd4084451979797c008836838a4052ebac073da61b6ac0.html">Accounts - Cloud Sign In links verify</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:03:08</td>
+                                                    <td>00:29</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="f8c84c1811299aaecd050ed8cb15998dfaa18a979b8a7cc2185e86c728993149.html">Contact</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="b146f07616cb377af827638c6634c95c41fd34d0c7ce8ca549907ab787bd35fd.html">Contact</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:03:42</td>
+                                                    <td>00:10</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="d1acfa0bef86cd75e98d86c5b4b275a9e3d78f0a430b6efe21791ba7b8d9b7d0.html">Country list</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="e07dc3980e0183cb2e158520edc836d616b22ff8583cca99d72859d0adedf223.html">Show regions and its countries</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>20:03:56</td>
+                                                    <td>00:21</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="193dc898addc1f577582ec80e9885d4b4cff675cdf3fa6accbab7f4cf2a511f3.html">Menu</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="3769758d082bfb48d11e079ea65037ca55424b29b0551af507f896f82813d394.html">Menu</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:04:21</td>
+                                                    <td>00:08</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="193dc898addc1f577582ec80e9885d4b4cff675cdf3fa6accbab7f4cf2a511f3.html">Menu</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="6d61dcee4728873435fd1d4781adcc46b25604311c419d475a2722a200d76b82.html">Navigate tositepage</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:04:32</td>
+                                                    <td>00:17</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="193dc898addc1f577582ec80e9885d4b4cff675cdf3fa6accbab7f4cf2a511f3.html">Menu</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="a25fcea3baa79ebd949a5435499ca28a109bfa000967a1c73d3ac65ed86c0345.html">Hover over menu</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:04:54</td>
+                                                    <td>00:20</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39d8d6215c6bbdcc524f526fd4a5200c3f829cf0240a94f0c6af5d4c4913c72a.html">Searchautosuggest</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="79d65d5ce82f1276b1caf55f344be45e780635f3c8a33606ec53592dfe591909.html">Suggest search keywords</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:05:18</td>
+                                                    <td>00:18</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39d8d6215c6bbdcc524f526fd4a5200c3f829cf0240a94f0c6af5d4c4913c72a.html">Searchautosuggest</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4d29b5ed8f13fb29e4f32141310d71f4e3cae4bb52783204ebbe196594467e19.html">Autosuggest retracts</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:05:41</td>
+                                                    <td>00:27</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39d8d6215c6bbdcc524f526fd4a5200c3f829cf0240a94f0c6af5d4c4913c72a.html">Searchautosuggest</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="71f81c0e1f6bc11a13e9f5432c7e405a6ea3c51b058c4b25e64a71fc7e606d2d.html">Autosuggest reappears as user types keyword</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:06:11</td>
+                                                    <td>00:36</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39d8d6215c6bbdcc524f526fd4a5200c3f829cf0240a94f0c6af5d4c4913c72a.html">Searchautosuggest</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="f636b1998b05636c5963f604cd71a477137071a93915e86ee15b461db9aa70f2.html">Select from auto suggestedkeywords</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:06:51</td>
+                                                    <td>00:59</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="00e6d1afdeddb18bd40103eaee4c54ade4602206bdbbcd1d290bce59c4036ea0.html">Site Search</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="8c1affbbe1484f851cf9fe539abb78816ac04359435602c77443930b4ae406f8.html">Search - Inactive</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:07:55</td>
+                                                    <td>00:13</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="00e6d1afdeddb18bd40103eaee4c54ade4602206bdbbcd1d290bce59c4036ea0.html">Site Search</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="55c27867a50a668b63ede7d2f2b1efe77a73298cecee5b0dbef4262f9577a742.html">Search - Open</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:08:11</td>
+                                                    <td>00:13</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="00e6d1afdeddb18bd40103eaee4c54ade4602206bdbbcd1d290bce59c4036ea0.html">Site Search</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="3a1a672c23afed32fb1d3efa992105fb7852022c1d5e310f75bd817f069e4017.html">Search - Active</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:08:29</td>
+                                                    <td>00:15</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result FAILURE">
+                                                    <td>
+                                                            <a href="00e6d1afdeddb18bd40103eaee4c54ade4602206bdbbcd1d290bce59c4036ea0.html">Site Search</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4d5be22c62bb8e8d122b4e18f9fdbe49673bd9ed00e3d62ba2656e3c8924cfe8.html">Search - Close</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:08:48</td>
+                                                    <td>00:27</td>
+                                                    <td><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
+                                                            style="display:none">FAILURE</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="00e6d1afdeddb18bd40103eaee4c54ade4602206bdbbcd1d290bce59c4036ea0.html">Site Search</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="98fde22774f7f6b80015f389db0267a930eba7bac8858c772a4cb8a506fd61a1.html">Search with a keyword</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>20:09:20</td>
+                                                    <td>00:16</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 2.0.9</span>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -21,6 +21,12 @@ public class searchsteps
     }
 	
 	@Step
+    public void maximize_browser()
+	{
+		scpage.maximize_browser();
+    }
+	
+	@Step
     public void is_search_icon_display()
 	{
 		scpage.is_search_icon_displayed();

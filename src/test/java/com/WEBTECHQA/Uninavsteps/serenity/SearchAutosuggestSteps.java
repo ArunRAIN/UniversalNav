@@ -14,11 +14,17 @@ public class SearchAutosuggestSteps
 	SearchAutosuggestPage SaPage;
 	
 	
-	 @Step
+	    @Step
 	    public void is_the_home_page()
 		{
 	    	SaPage.open();
 			
+	    }
+	 
+	    @Step
+	    public void maximize_browser()
+		{
+	    	SaPage.maximize_browser();
 	    }
 		
 	 

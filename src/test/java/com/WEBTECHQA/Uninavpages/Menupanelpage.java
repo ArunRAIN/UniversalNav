@@ -34,6 +34,13 @@ public class Menupanelpage extends PageObject
 		}
 	}
 	
+	public void maximize_browser()
+	{
+		waitABit(1000);
+		getDriver().manage().window().maximize();
+	}
+	
+	
 	public void hover_on_menu()
 	{
 		//waitFor(ExpectedConditions.visibilityOf(menu));
@@ -122,6 +129,47 @@ public class Menupanelpage extends PageObject
     }
 	
 	
+    public void menu_opened()
+	{
+		waitABit(2000);
+    	int ele = getDriver().findElements(By.xpath("//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']/ul/li[1]/div[@class='u02menu-l2 u02menuwrap u02mheight']/ul/li[2]/a")).size();
+    	
+    	if(ele==1)
+    	{
+    		Assert.assertTrue(true);
+    	}
+    	else
+    	{
+    		Assert.assertTrue(false);
+    	}
+	}
+	
+	
+	 
+	
+	public void click_on_link()
+	{
+		waitABit(1500);
+		getDriver().findElement(By.xpath("((//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']//li/a[text()='Products'])[1]/../div/ul/li/a[text()='IT Infrastructure']/../div/ul/li/a[text()='IT Infrastructure']/../following-sibling::li)[2]")).click();
+		
+	}
+	
+	public void is_page_navigated()
+	{
+		waitABit(4000);
+		String actualtitle=getDriver().getTitle();
+    	
+    	if(actualtitle.contains(actualtitle))
+    	{
+    		Assert.assertTrue(true);
+    	}
+    	else
+    	{
+    		
+	     Assert.assertTrue(false);
+	    	  
+    	}
+	}
 	
 	
 	

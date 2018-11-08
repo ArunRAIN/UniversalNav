@@ -1,11 +1,8 @@
 com\WEBTECHQA\UniNav\AcceptanceTestSuite.class
-com\WEBTECHQA\UninavDefinition\CarouselBannerDefinition.class
 com\WEBTECHQA\Uninavpages\SearchAutosuggestPage.class
 com\WEBTECHQA\UninavDefinition\searchdefinition.class
-com\WEBTECHQA\UninavDefinition\MenusiteDefinition.class
 com\WEBTECHQA\Uninavsteps\serenity\Accountsteps.class
 com\WEBTECHQA\Uninavsteps\serenity\CountryListSteps.class
-com\WEBTECHQA\Uninavpages\CarouselBannerPage.class
 com\WEBTECHQA\Uninavsteps\serenity\Contactsteps.class
 com\WEBTECHQA\Uninavsteps\serenity\SearchAutosuggestSteps.class
 com\WEBTECHQA\UninavDefinition\CountryListDefinition.class
@@ -15,12 +12,9 @@ com\WEBTECHQA\UniNav\Genric.class
 com\WEBTECHQA\UninavDefinition\Contactdefinition.class
 com\WEBTECHQA\UninavDefinition\SearchAutosuggestDefinition.class
 com\WEBTECHQA\Uninavpages\CountryListPage.class
-com\WEBTECHQA\Uninavsteps\serenity\CarouselBannerSteps.class
-com\WEBTECHQA\Uninavpages\Menusitepage.class
 com\WEBTECHQA\Uninavsteps\serenity\searchsteps.class
 com\WEBTECHQA\Uninavpages\Searchpage.class
 com\WEBTECHQA\UninavDefinition\AccountDefinition.class
-com\WEBTECHQA\Uninavsteps\serenity\Menusitesteps.class
 com\WEBTECHQA\Uninavpages\AccountPage.class
 com\WEBTECHQA\Uninavpages\Menupanelpage.class
 com\WEBTECHQA\UninavDefinition\Menupaneldefinition.class

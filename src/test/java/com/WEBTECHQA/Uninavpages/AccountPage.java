@@ -33,6 +33,14 @@ public class AccountPage extends PageObject
     private WebElementFacade signbtn2;
 
 	
+    
+    public void maximize_browser()
+	{
+		waitABit(1000);
+		getDriver().manage().window().maximize();
+	}
+	
+    
 	public void is_not_signedIn()
 	{
 		boolean ele = getDriver().findElement(By.xpath("//li[@class='u02mtool u02toolsloggedout']//span[text()='Sign In']")).isDisplayed();
@@ -176,7 +184,7 @@ public void SignIn_account()
 	
 	public void signin_option_displayed(String option)
 	{
-		int ele22 = getDriver().findElements(By.xpath("//h5[text()='Sign into Cloud']/../..//a[contains(text(),'"+option+"')]")).size();
+		int ele22 = getDriver().findElements(By.xpath("//h5[text()='Cloud Account']/../..//a[text()='"+option+"']")).size();
    	    if(ele22==1)
    	    {
    	    	Assert.assertTrue(true);

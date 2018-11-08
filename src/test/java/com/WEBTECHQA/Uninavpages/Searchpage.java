@@ -29,6 +29,12 @@ public class Searchpage extends PageObject
 		}
 	}
 	
+	public void maximize_browser()
+	{
+		waitABit(2000);
+		getDriver().manage().window().maximize();
+	}
+	
 	public void is_search_icon_displayed()
 	{
 		int ele = getDriver().findElements(By.xpath("//input[@class='u02searchbttn']")).size();
@@ -54,10 +60,10 @@ public class Searchpage extends PageObject
 	public void is_search_field_open()
 	{
 		waitABit(3000);
-		WebElement ele = getDriver().switchTo().activeElement();
-    	Assert.assertEquals(ele, getDriver().findElement(By.id("txtSearch")));
-    	waitABit(1000);
-		//getDriver().findElement(By.id("txtSearch")).sendKeys("ora");
+//		WebElement ele = getDriver().switchTo().activeElement();
+//    	Assert.assertEquals(ele, getDriver().findElement(By.id("txtSearch")));
+//    	waitABit(1000);
+		getDriver().findElement(By.id("txtSearch")).sendKeys("ora");
 		waitABit(3000);
 	}
 	

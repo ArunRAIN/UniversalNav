@@ -10,7 +10,26 @@ public class CountryListSteps extends ScenarioSteps
 
 	CountryListPage CLPage;
 	
-    @Step
+   
+	@Step
+	public void is_the_home_page() 
+	{
+		CLPage.open();
+	}
+	
+	@Step
+    public void maximize_browser()
+	{
+		CLPage.maximize_browser();
+    }
+    
+	@Step
+    public void global_nav_loads()
+	{
+		CLPage.is_page_loaded();
+    }
+	
+	@Step
 	public void hover_on(String country) 
 	{
     	CLPage.hover_on(country);

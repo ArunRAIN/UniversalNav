@@ -15,6 +15,12 @@ public class Accountsteps
 	}
     
     @Step
+    public void maximize_browser()
+	{
+    	AcPage.maximize_browser();
+    }
+    
+    @Step
 	public void is_logged_out() 
 	{
     	AcPage.is_not_signedIn();

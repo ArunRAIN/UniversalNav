@@ -19,6 +19,7 @@ public class SearchAutosuggestDefinition
 	public void Givenuserclickedinthesearchfield()
 	{
 		sastep.is_the_home_page();
+		sastep.maximize_browser();
 		sastep.click_searchIcon();
 	}
 	
@@ -40,6 +41,7 @@ public class SearchAutosuggestDefinition
 	public void Givenautosuggestappears()
 	{
 		sastep.is_the_home_page();
+		sastep.maximize_browser();
 		sastep.click_searchIcon();
 		sastep.type_keyword("ora");
 		sastep.Autosuggestion_display();
@@ -61,6 +63,7 @@ public class SearchAutosuggestDefinition
 	public void Givenautosuggestionretracted()
 	{
 	   sastep.is_the_home_page();
+	   sastep.maximize_browser();
 	   sastep.click_searchIcon();
 	   sastep.type_keyword("ora");
 	   sastep.Autosuggestion_display();
@@ -85,6 +88,7 @@ public class SearchAutosuggestDefinition
 	public void Givensearchfieldshowsautosuggestions()
 	{
 		   sastep.is_the_home_page();
+		   sastep.maximize_browser();
 		   sastep.click_searchIcon();
 		   sastep.type_keyword("ora");
 		   sastep.Autosuggestion_display();

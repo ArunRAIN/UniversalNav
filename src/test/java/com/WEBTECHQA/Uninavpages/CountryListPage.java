@@ -16,6 +16,28 @@ public class CountryListPage extends PageObject
     private WebElementFacade country;
 
 	
+	public void is_page_loaded()
+	{
+		while(true)
+		{
+			
+		JavascriptExecutor js = (JavascriptExecutor)getDriver();
+		String str = js.executeScript("return document.readyState").toString();
+		
+		if(str.equals("complete"))
+		{
+			break;
+		}
+		
+		}
+	}
+	
+	public void maximize_browser()
+	{
+		waitABit(1000);
+		getDriver().manage().window().maximize();
+	}
+	
 	public void hover_on(String country)
 	{
 		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";

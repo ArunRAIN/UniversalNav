@@ -20,12 +20,14 @@ public class searchdefinition
     public void userisontheOCOMpage() 
 	{
 		 scStep.is_the_home_page();
+		 scStep.maximize_browser();
 	}
 
-	@When("Global Nav loads")
-    public void GivenGlobalNavloads() 
+	@When("Global nav loads")
+    public void WhenGlobalnavloads() 
 	{
-		 
+		scStep.is_the_home_page();
+		scStep.maximize_browser();
 		 scStep.global_nav_loads();
 	}
 	
@@ -53,13 +55,14 @@ public class searchdefinition
 	public void givenUserClickedOnsearchIcon() 
 	{
 		scStep.is_the_home_page();
-	  scStep.click_on_search_icon();
+		scStep.maximize_browser();
+	    scStep.click_on_search_icon();
 	}
 
 	@When("search field opens")
 	public void whenSearchFieldOpens() 
 	{
-	  //scStep.is_search_field_open();
+	  scStep.is_search_field_open();
 	}
 
 	@Then("text search and cursor must appear in the field")
@@ -72,6 +75,7 @@ public class searchdefinition
 	@Given("search box in open")
 	public void givenSearchBoxInOpen() {
 		scStep.is_the_home_page();
+		scStep.maximize_browser();
 		scStep.click_on_search_icon();
 	    scStep.is_search_field_open();
 	}
@@ -94,7 +98,8 @@ public class searchdefinition
 	public void givenUserEnteredAKeyword()
 	{
 		scStep.is_the_home_page();
-	  scStep.enter_keyword_in_searchbox();
+		scStep.maximize_browser();
+	    scStep.enter_keyword_in_searchbox();
 	}
 
 	@When("user clicks onsearch icon")
