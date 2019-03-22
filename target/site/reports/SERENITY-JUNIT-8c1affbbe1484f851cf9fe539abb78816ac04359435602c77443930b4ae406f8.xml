@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Site Search" skipped="0" tests="5" time="86.97" timestamp="2018-11-08 08:07:55"><testcase name="Search - Inactive"/><testcase name="Search - Open"/><testcase name="Search - Active"/><testcase name="Search - Close"><failure type="java.lang.AssertionError"/><system-err>null&#13;
-com.WEBTECHQA.Uninavpages.Searchpage.is_search_inactive_state(Searchpage.java:105)&#13;
-com.WEBTECHQA.Uninavsteps.serenity.searchsteps.is_search_inactive_state(searchsteps.java:63)&#13;
-com.WEBTECHQA.UninavDefinition.searchdefinition.thenSearchMustShowinactiveState(searchdefinition.java:93)&#13;
-</system-err></testcase><testcase name="Search with a keyword"/></testsuite>

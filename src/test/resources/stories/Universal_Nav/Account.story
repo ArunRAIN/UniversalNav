@@ -31,5 +31,5 @@ Given user is logged in Oracle account
 When user hovers over Account
 Then User verify Oracle signin must have links:
 |Option|
-|Free Cloud Platform Trial|
-|Sign in                  |
+|Sign up for a free trial |
+|Sign in to Cloud         |

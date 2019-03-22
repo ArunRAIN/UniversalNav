@@ -32,8 +32,8 @@
 <step outcome="successful">Then User verify Oracle signin must have links:
 <parameter><parameters>
 <names><name>Option</name></names>
-<values><value>Free Cloud Platform Trial</value></values>
-<values><value>Sign in</value></values>
+<values><value>Sign up for a free trial</value></values>
+<values><value>Sign in to Cloud</value></values>
 </parameters>
 </parameter></step>
 </scenario>

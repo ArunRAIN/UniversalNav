@@ -12,6 +12,7 @@ com\WEBTECHQA\UniNav\Genric.class
 com\WEBTECHQA\UninavDefinition\Contactdefinition.class
 com\WEBTECHQA\UninavDefinition\SearchAutosuggestDefinition.class
 com\WEBTECHQA\Uninavpages\CountryListPage.class
+com\WEBTECHQA\Uninavpages\test.class
 com\WEBTECHQA\Uninavsteps\serenity\searchsteps.class
 com\WEBTECHQA\Uninavpages\Searchpage.class
 com\WEBTECHQA\UninavDefinition\AccountDefinition.class

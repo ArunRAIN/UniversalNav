@@ -27,6 +27,25 @@ public class searchsteps
     }
 	
 	@Step
+	public void type_keyword(String option)
+	{
+		scpage.type_keyword(option);
+	}
+	
+	@Step
+	public void Autosuggestion_display()
+	{
+		scpage.verify_Autosuggestion_display();
+	}
+	
+	@Step
+	public void click_outside_searchbox()
+    {
+		scpage.click_outside_searchbox();
+    }
+	
+	
+	@Step
     public void is_search_icon_display()
 	{
 		scpage.is_search_icon_displayed();

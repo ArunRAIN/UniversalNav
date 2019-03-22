@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Site Search","Search - Inactive","SUCCESS","2019-03-22T17:36:49.052+05:30[Asia/Calcutta]","0.0","19.43"
+"Site Search","Search - Open","SUCCESS","2019-03-22T17:37:09.917+05:30[Asia/Calcutta]","0.0","35.52"
+"Site Search","Search - Active","SUCCESS","2019-03-22T17:37:46.897+05:30[Asia/Calcutta]","0.0","21.46"
+"Site Search","Search - Close","SUCCESS","2019-03-22T17:38:09.757+05:30[Asia/Calcutta]","0.0","35.28"
+"Site Search","Search with a keyword","SUCCESS","2019-03-22T17:38:46.451+05:30[Asia/Calcutta]","0.0","22.97"

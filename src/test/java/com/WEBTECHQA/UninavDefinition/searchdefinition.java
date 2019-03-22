@@ -5,6 +5,7 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
 import com.WEBTECHQA.Uninavsteps.serenity.Menupanelsteps;
+import com.WEBTECHQA.Uninavsteps.serenity.SearchAutosuggestSteps;
 import com.WEBTECHQA.Uninavsteps.serenity.searchsteps;
 
 import net.thucydides.core.annotations.Steps;
@@ -14,6 +15,9 @@ public class searchdefinition
 	
 	@Steps
 	searchsteps scStep;
+	
+	@Steps
+	SearchAutosuggestSteps sastep;
 	
 
 	@Given("user is on the OCOM  page")
@@ -77,14 +81,15 @@ public class searchdefinition
 		scStep.is_the_home_page();
 		scStep.maximize_browser();
 		scStep.click_on_search_icon();
-	    scStep.is_search_field_open();
+		scStep.type_keyword("ora");
+		scStep.Autosuggestion_display();
 	}
 
 	@When("user clicks away from search field")
 	public void whenUserClicksAwayFromsearchField() 
 	{
 	  
-		scStep.click_on_outside_searchbox();
+		sastep.click_outside_searchbox();
 	}
 
 	@Then("search must show inactive state")

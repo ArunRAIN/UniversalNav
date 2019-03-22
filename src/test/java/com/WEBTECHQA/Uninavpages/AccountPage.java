@@ -69,11 +69,26 @@ public class AccountPage extends PageObject
 	
 	public void hover_on_signIn()
 	{
-		waitABit(3000);
+		
 		WebElement ele2 = getDriver().findElement(By.xpath("//li[@class='u02mtool u02toolsloggedout']//span[text()='Sign In']"));
-		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+		
 		JavascriptExecutor js = (JavascriptExecutor)getDriver();
-		js.executeScript(mouseOverScript, ele2);
+        String name=js.executeScript("return navigator.userAgent").toString();
+        System.out.println(name);
+        waitABit(3000);
+        if(name.contains("Firefox"))
+        {
+//        	Actions a=new Actions(getDriver());
+//    		a.moveToElement(ele2).perform();
+        	ele2.click();
+        }
+        else
+        {
+        	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+    		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
+    		js2.executeScript(mouseOverScript, ele2);
+    		
+        }
 	}
 	
 	
@@ -99,7 +114,7 @@ public class AccountPage extends PageObject
 	
 	public void click_on_signin()
 	{
-		WebElement ele = getDriver().findElement(By.xpath("//div[@class='u02userinw1 u02userloggedout']//h5[text()='Oracle Account']/../div/a[text()='Sign in']"));
+		WebElement ele = getDriver().findElement(By.xpath("//div[@class='u02userinw1 u02userloggedout']//h5[text()='Oracle Account']/../div/a[contains(text(),'Sign in')]"));
 		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
 	    js2.executeScript("arguments[0].click();", ele);
 	    
@@ -148,10 +163,25 @@ public void SignIn_account()
 	{
 		waitABit(8000);
 		WebElement ele2 = getDriver().findElement(By.xpath("//li[@class='u02mtool u02toolsloggedin']//span[text()='Account']"));
-		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
-		JavascriptExecutor js = (JavascriptExecutor)getDriver();
-		js.executeScript(mouseOverScript, ele2);
 		
+		
+		JavascriptExecutor js = (JavascriptExecutor)getDriver();
+		String name=js.executeScript("return navigator.userAgent").toString();
+        System.out.println(name);
+        waitABit(3000);
+        if(name.contains("Firefox"))
+        {
+//        	Actions a=new Actions(getDriver());
+//    		a.moveToElement(ele2).perform();
+        	ele2.click();
+        }
+        else
+        {
+        	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+    		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
+    		js2.executeScript(mouseOverScript, ele2);
+    		
+        }
 	}
 	
 	public void is_oracle_account_display()
@@ -184,7 +214,7 @@ public void SignIn_account()
 	
 	public void signin_option_displayed(String option)
 	{
-		int ele22 = getDriver().findElements(By.xpath("//h5[text()='Cloud Account']/../..//a[text()='"+option+"']")).size();
+		int ele22 = getDriver().findElements(By.xpath("//h5[contains(text(),'Cloud')]/../..//a[text()='"+option+"']")).size();
    	    if(ele22==1)
    	    {
    	    	Assert.assertTrue(true);

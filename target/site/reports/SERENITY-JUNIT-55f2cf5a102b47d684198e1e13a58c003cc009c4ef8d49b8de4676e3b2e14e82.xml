@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Searchautosuggest" skipped="0" tests="4" time="174.53" timestamp="2018-11-08 08:16:03"><testcase name="Suggest search keywords"/><testcase name="Autosuggest retracts"/><testcase name="Autosuggest reappears as user types keyword"/><testcase name="Select from auto suggestedkeywords"/></testsuite>

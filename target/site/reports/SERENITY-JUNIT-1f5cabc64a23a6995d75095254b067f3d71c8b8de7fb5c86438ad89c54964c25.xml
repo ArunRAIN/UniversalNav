@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Account" skipped="0" tests="4" time="106.62" timestamp="2018-11-08 08:01:40"><testcase name="Accounts - logged out state"/><testcase name="Accounts - logged in state"/><testcase name="Accounts - Oracle Account links verify"/><testcase name="Accounts - Cloud Sign In links verify"/></testsuite>

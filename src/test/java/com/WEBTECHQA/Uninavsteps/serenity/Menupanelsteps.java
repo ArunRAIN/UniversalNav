@@ -19,6 +19,7 @@ public class Menupanelsteps
     public void maximize_browser()
 	{
 		mppage.maximize_browser();
+		mppage.hover_on_menu();
     }
 	
 	@Step

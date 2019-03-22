@@ -15,7 +15,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class Menupanelpage extends PageObject
 {
-	@FindBy(xpath="//div[text()='Menu']")
+	@FindBy(id="u02menulink")
     private WebElementFacade menu;
 
 	public void is_page_loaded()
@@ -36,8 +36,14 @@ public class Menupanelpage extends PageObject
 	
 	public void maximize_browser()
 	{
-		waitABit(1000);
+		
 		getDriver().manage().window().maximize();
+		waitABit(3000);
+		List<WebElement> ele = getDriver().findElements(By.xpath("//em[text()='Close']"));
+		if(ele.size()==1)
+		{
+			getDriver().findElement(By.xpath("//em[text()='Close']")).click();
+		}
 	}
 	
 	
@@ -46,14 +52,30 @@ public class Menupanelpage extends PageObject
 		//waitFor(ExpectedConditions.visibilityOf(menu));
     	
 		waitABit(5000);
-		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
-		JavascriptExecutor js = (JavascriptExecutor)getDriver();
-		js.executeScript(mouseOverScript, menu);
+//		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+//		JavascriptExecutor js = (JavascriptExecutor)getDriver();
+//		js.executeScript(mouseOverScript, menu);
 //		waitABit(5000);
 //		//WebElement element = driver.findElement(By.id('button'));
 //		JavascriptExecutor js = (JavascriptExecutor)getDriver();
 //		js.executeScript("arguments[0].click();", menu);
-		
+		JavascriptExecutor js = (JavascriptExecutor)getDriver();
+		String name=js.executeScript("return navigator.userAgent").toString();
+        System.out.println(name);
+        waitABit(3000);
+        if(name.contains("Firefox"))
+        {
+//        	Actions a=new Actions(getDriver());
+//    		a.moveToElement(ele2).perform();
+        	menu.click();
+        }
+        else
+        {
+        	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+    		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
+    		js2.executeScript(mouseOverScript, menu);
+    		
+        }
 		
 		
 	}
@@ -79,9 +101,27 @@ public class Menupanelpage extends PageObject
     	//int num = randomnumber();
 		
     	WebElement ele = getDriver().findElement(By.xpath("//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']/ul/li[2]"));
-    	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
-		JavascriptExecutor js = (JavascriptExecutor)getDriver();
-		js.executeScript(mouseOverScript, ele);
+//    	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+//		JavascriptExecutor js = (JavascriptExecutor)getDriver();
+//		js.executeScript(mouseOverScript, ele);
+    	JavascriptExecutor js = (JavascriptExecutor)getDriver();
+		String name=js.executeScript("return navigator.userAgent").toString();
+        System.out.println(name);
+        waitABit(3000);
+        if(name.contains("Firefox"))
+        {
+//        	Actions a=new Actions(getDriver());
+//    		a.moveToElement(ele2).perform();
+        	System.out.println("hi");
+        	ele.click();
+        }
+        else
+        {
+        	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+    		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
+    		js2.executeScript(mouseOverScript, ele);
+    		
+        }
     	waitABit(2000);
     }
     
@@ -105,9 +145,26 @@ public class Menupanelpage extends PageObject
     public void hover_on_secondary_panel_catagories()
     {
     	WebElement hover = getDriver().findElement(By.xpath("(//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']//li/a[text()='Products'])[1]/../div/ul/li/a[text()='IT Infrastructure']"));
-    	Actions a1=new Actions(getDriver());
-    	a1.moveToElement(hover).perform();
-    	
+//    	Actions a1=new Actions(getDriver());
+//    	a1.moveToElement(hover).perform();
+    	JavascriptExecutor js = (JavascriptExecutor)getDriver();
+		String name=js.executeScript("return navigator.userAgent").toString();
+        System.out.println(name);
+        waitABit(3000);
+        if(name.contains("Firefox"))
+        {
+//        	Actions a=new Actions(getDriver());
+//    		a.moveToElement(ele2).perform();
+        	hover.click();
+        }
+        else
+        {
+        	String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+    		JavascriptExecutor js2 = (JavascriptExecutor)getDriver();
+    		js2.executeScript(mouseOverScript, hover);
+    		
+        }
+//    	
     	waitABit(1500);
     
     
@@ -115,17 +172,17 @@ public class Menupanelpage extends PageObject
     
     public void shows_categories_with_direct_link()
     {
-    	List<WebElement> ele=getDriver().findElements(By.xpath("(//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']//li/a[text()='Products'])[1]/../div/ul/li/a[text()='IT Infrastructure']/../div/ul/li/a[text()='IT Infrastructure']/../following-sibling::li"));
-        
-        for(int i=1;i<ele.size();i++)
-        {
-      	 WebElement move = ele.get(i);
+//    	List<WebElement> ele=getDriver().findElements(By.xpath("(//div[@class='u02menu-l1 u02menuwrap u02mheight u02menu-nomn']//li/a[text()='Products'])[1]/../div/ul/li/a[text()='IT Infrastructure']/../div/ul/li/a[text()='IT Infrastructure']/../following-sibling::li"));
+//        
+//        for(int i=1;i<ele.size();i++)
+//        {
+//      	 WebElement move = ele.get(i);
+//      	 
+//      	 Actions a=new Actions(getDriver());
+//      	 a.moveToElement(move).perform();
+//      	 waitABit(300);
       	 
-      	 Actions a=new Actions(getDriver());
-      	 a.moveToElement(move).perform();
-      	 waitABit(300);
-      	 
-        }
+        //}
     }
 	
 	

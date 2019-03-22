@@ -68,8 +68,8 @@ public class SearchAutosuggestPage extends PageObject
     
     public void click_outside_searchbox()
     {
-//    	searchIcon.sendKeys(Keys.TAB);
-//    	searchIcon.sendKeys(Keys.TAB);
+    	searchbox.clear();
+    	
     	WebElement cont = getDriver().findElement(By.xpath("//li[@class='u02mtool']/a/span[contains(text(),'Contact')]"));
     	waitABit(5000);
 		String mouseOverScript ="if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover',true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
